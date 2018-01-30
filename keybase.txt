@@ -1,0 +1,72 @@
+==================================================================
+https://keybase.io/rvlobato
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://rvlobato.github.io
+  * I am rvlobato (https://keybase.io/rvlobato) on keybase.
+  * I have a public key with fingerprint 0EDF 0C53 F739 9B5F 254E  B3F9 4B38 5481 7E8B F5C5
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101673e6800c64f5643bafbb39643c10ea2d01b8f4435afe0faeeeaa0619cd489900a",
+      "fingerprint": "0edf0c53f7399b5f254eb3f94b3854817e8bf5c5",
+      "host": "keybase.io",
+      "key_id": "4b3854817e8bf5c5",
+      "kid": "0101673e6800c64f5643bafbb39643c10ea2d01b8f4435afe0faeeeaa0619cd489900a",
+      "uid": "aaad5bfe36c965d48f56bb94428fff19",
+      "username": "rvlobato"
+    },
+    "service": {
+      "hostname": "rvlobato.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1517327407,
+  "expire_in": 157680000,
+  "prev": "c6ffe243689a9aeeb72de653958345d7d6f28e674d4dc1031dba65a024ab3c2a",
+  "seqno": 6,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+
+owGtUl1MHFUY5adSCsqS0oI00uokYE0AZ3b+V7C0KVjBQoXWBA3uzp25s0wWd7a7
+s/wtIBtQslAQwxJL+RGIKNBirTXIplRdIo2Vhwq09UFJK0WgkGiwRWljwRm0L8ZH
+n+6933fOuec7+ZofCw4IDcxijrqrGlbHAydug4BXbV7ahQBZKEMMLsQCNw9YJECH
+YrRIAmJAUAzFKBqHFIOiPEWIJEXggBMBwFn1xmMo5PQCigFGJAic5ESIihyEkONQ
+CmN5gWBYFkU5JBERJasZ2m12yaposlAQUZ7ERRpnWUCKepKAABdZAuAMSTAYDRkg
+kjypEgtlh8ZQzQHOAZMlWa2pD+Omvf/A/8++nZtyHMcJJBAhTvEsRaptVRAAliD0
+jCiKGKsBHdBu5d6AKtpeXCQDTpGRykRErRZLPNSC1Sb5FyLZLCmFTvD3VDa7rMi8
+XKT2CxXF5jBofKXMphFKIDD+I2UEklVQ01QZxdDukGQrYsBUJK9ImjZGYjSupwmU
+TkRgqU2yQ6OkIUhaywJFtX9gsSrJv06JItQTOMWwHKtOD2i9ACkSZ0kGJ0iBFihR
+z0CKJgRCUBPDMQFwFMmheoIDOK/X0nHA41YZMVCqT86sajoks5VTnHaIVIZ5gvAt
+AYGhAXHRT22JuPFo3h9suzE++/y9hxv4SJC2fgFh2yIfVlzduo1ydshy/VaVtZW6
+5vZQ1WLFtW2zq/7Y9z6Z9q85P3unY6n6Tfz54NbLmcjs6nXv3f19L3dNS7rFuQO7
+2gwp88W1L0webR3cOPTtDzEFz3X2r4XsXqaGzrqb+tq6L5mSIifM2ytSnboruozJ
+oYXDp5KnxvYMx4Z/0TG/0ul3e98yeHR0T/S50Txd74fProf7E/4sXQhKGSCWiMEW
+8g4fEnzfPfNN3dpY2cmpmy+KEwPtIVMpBbfqXGPTB545tuJJQUtGatuz5TtUd3pM
+ztz5fY1NWx0iPmFauqxUhbvqRgbF6twj+blhnp6u8Kz4tear/WD77HjOibd9n/+2
+czj0QXXKgrf+TEL22cVqS+weOdpbk13hjetz3rPwLbmmhvjbRELSK73pNfev5J1m
+Dtbnp65+uf6BPigdNnj63V5Tzy/Dv9uXRxJHDKdXOyO96a4My2sPPORCZAH4/iWb
+fy+YfXom7d3x+PqYnVJcWkWGITM+IuLYPv9Xg3vrlmBIZoxzPGq5MH1/3s2sX3fN
+93YdBgd3oFVlRGH+AAvKzcdT51zGu6bdw4YSX0cIcqTx59KvH59cT1B8Z4JrVy71
+DmZMvB9aDi7+uHDxo9QnfL6NwKaanNKZ5JWtUx1ZaabvOj9tjvJFJo0u3XiysTwU
+4BdaompGl3+KvvDxjo22c4cqc64uTmX+BQ==
+=k+1y
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/rvlobato
+
+==================================================================
