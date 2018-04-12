@@ -10,5 +10,5 @@ To Clone this Repository:
    git clone https://github.com/rvlobato/rvlobato.github.io.git
 
 
-#The signature can be foun in:
+#The signature can be found in:
 https://rvlobato.github.io/keybase.txt
