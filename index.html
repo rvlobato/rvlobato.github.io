@@ -70,6 +70,13 @@ Mandriva Linux</a> &rarr; <a href="https://ubuntu.com/">Ubuntu</a> &rarr; <a hre
 	<p align="justify">  Please email me if you find any broken links or other errors on this site. Patches, suggestions and comments are welcome.
 </p> 	  
 	<script language="Javascript">
+	  var derniereModif = document.lastModified;
+            var dateModif = new Date(derniereModif);
+            var jour = dateModif.getUTCDate();
+            var mois = dateModif.getUTCMonth();
+            var annee = dateModif.getUTCFullYear();
+            var heures = dateModif.getHours();
+            var minutes = dateModif.getMinutes();
 	  var d = document.lastModified;
 	  var dmod = new Date(d);
 	  var B = dmod.getUTCDate();
