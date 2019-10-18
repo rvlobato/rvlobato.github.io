@@ -75,8 +75,8 @@ Mandriva Linux</a> &rarr; <a href="https://ubuntu.com/">Ubuntu</a> &rarr; <a hre
           var jour = dateModif.getUTCDate();
           var mois = dateModif.getUTCMonth();
           var annee = dateModif.getUTCFullYear();
-          var heures = dateModif.getHours();
-          var minutes = dateModif.getMinutes();
+          var heures = dateModif.getUTCHours();
+          var minutes = dateModif.getUTCMinutes();
 	  document.write("This main page was last modified on: "+ jour + "/" + mois + "/" + annee + " à " + heures + ":" + minutes+"");
 </SCRIPT>.
 	  <h3>
