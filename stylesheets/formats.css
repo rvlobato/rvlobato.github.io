@@ -1,6 +1,6 @@
 :root {
     background-color: #f6f5f4;
-    font-size: 1.2em;
+    font-size: 18px;
 }
 
 a {
@@ -21,12 +21,6 @@ header h2 {
 
 h1 {
   font-size: 1.3em;
-}
-
-table {
-    width: 100%;
-    table-layout: fixed;
-    margin: 0 auto;
 }
 
 th > a {
