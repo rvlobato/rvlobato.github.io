@@ -73,11 +73,3 @@ tr:nth-child(even) {
 	margin: 2em auto;
     }
 }
-
-/* Mobile browsers only */
-@media screen and (max-device-width: 480px){
-    body{
-	line-height: 1.15; /* 1 */
-	-webkit-text-size-adjust: 100%;
-  }
-}
