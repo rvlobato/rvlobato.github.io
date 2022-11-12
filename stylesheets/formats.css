@@ -1,10 +1,6 @@
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html;" charset="UTF-8" >
-<style>
-
 :root {
     background-color: #f6f5f4;
+    font-size: 1.2em;
 }
 
 a {
@@ -83,7 +79,3 @@ tr:nth-child(even) {
 	margin: 2em auto;
     }
 }
-
-</style>
-</head>
-</html>
