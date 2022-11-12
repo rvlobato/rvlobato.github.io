@@ -76,7 +76,8 @@ tr:nth-child(even) {
 
 /* Mobile browsers only */
 @media screen and (max-device-width: 480px){
-  body{
-    -webkit-text-size-adjust: none;
+    body{
+	line-height: 1.15; /* 1 */
+	-webkit-text-size-adjust: 100%;
   }
 }
