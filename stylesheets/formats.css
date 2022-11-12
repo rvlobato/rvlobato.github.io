@@ -1,3 +1,77 @@
-<html><head><title>file:///.../stylesheets/</title><meta http-equiv="Content-Type" content="text/html;" charset="UTF-8"><style>:root { background-color: #f6f5f4; } a { text-decoration: none; } a:hover { text-decoration: underline; } table { width: 100%; table-layout: fixed; margin: 0 auto; } th > a { color: inherit; } table[order] > thead > tr > th::after { display: none; width: .8em; margin-inline-end: -.8em; text-align: end; } table[order="asc"] > thead > tr > th::after { content: "\2193"; } table[order="desc"] > thead > tr > th::after { content: "\2191"; } table[order][order-by="0"] > thead > tr > th:first-child > a , table[order][order-by="1"] > thead > tr > th:first-child + th > a , table[order][order-by="2"] > thead > tr > th:first-child + th + th > a { text-decoration: underline; } table[order][order-by="0"] > thead > tr > th:first-child::after , table[order][order-by="1"] > thead > tr > th:first-child + th::after , table[order][order-by="2"] > thead > tr > th:first-child + th + th::after { display: inline-block; } td:first-child { max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; } tr:nth-child(even) { background-color: #f2f2f2; } @media (min-width: 550px) { body { padding: 3em; background-color: white; border-radius: 1em; border: 2px solid rgba(211, 215, 207); max-width: 65em; margin: 2em auto; } }</style><script>'use strict'; var gTable, gOrderBy, gTBody, gRows; document.addEventListener("DOMContentLoaded", function() { gTable = document.getElementsByTagName("table")[0]; gTBody = gTable.tBodies[0]; if (gTBody.rows.length < 2) return; var headCells = gTable.tHead.rows[0].cells; function rowAction(i) { return function(event) { event.preventDefault(); orderBy(i); } } for (var i = headCells.length - 1; i >= 0; i--) { var anchor = document.createElement("a"); anchor.href = ""; anchor.appendChild(headCells[i].firstChild); headCells[i].appendChild(anchor); headCells[i].addEventListener("click", rowAction(i), true); } gTable.setAttribute("order", ""); orderBy(0); }, "false"); function compareRows(rowA, rowB) { var a = rowA.cells[gOrderBy].getAttribute("sortable-data") || rowA.cells[gOrderBy].innerHTML; var b = rowB.cells[gOrderBy].getAttribute("sortable-data") || rowB.cells[gOrderBy].innerHTML; var intA = +a; var intB = +b; if (a == intA && b == intB) { a = intA; b = intB; } else { a = a.toLowerCase(); b = b.toLowerCase(); } if (a < b) return -1; if (a > b) return 1; return 0; } function orderBy(column) { if (!gRows) gRows = Array.from(gTBody.rows); var order; if (gOrderBy == column) { order = gTable.getAttribute("order") == "asc" ? "desc" : "asc"; } else { order = "asc"; gOrderBy = column; gTable.setAttribute("order-by", column); gRows.sort(compareRows); } gTable.removeChild(gTBody); gTable.setAttribute("order", order); if (order == "asc") for (var i = 0; i < gRows.length; i++) gTBody.appendChild(gRows[i]); else for (var i = gRows.length - 1; i >= 0; i--) gTBody.appendChild(gRows[i]); gTable.appendChild(gTBody); }</script></head><body><table><thead><th align="left">Name</th><th align="right">Size</th><th align="right">Date Modified</th></thead><tr><td sortable-data="file:///home/ronaldo/Desktop/site/rvlobato.github.io/stylesheets/print.css~"><a href="file:///home/ronaldo/Desktop/site/rvlobato.github.io/stylesheets/print.css~">print.css~</a></td><td align="right" sortable-data="3452">3.5 kB</td><td align="right" sortable-data="1663089463">17:17:43&ensp;09/13/22</td>
-</tr><tr><td sortable-data="file:///home/ronaldo/Desktop/site/rvlobato.github.io/stylesheets/print.css"><a href="file:///home/ronaldo/Desktop/site/rvlobato.github.io/stylesheets/print.css">print.css</a></td><td align="right" sortable-data="230">230 bytes</td><td align="right" sortable-data="1668212422">00:20:22&ensp;11/12/22</td>
-</tr></table></body></html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;" charset="UTF-8" >
+<style>
+
+:root {
+    background-color: #f6f5f4;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+    margin: 0 auto;
+}
+
+th > a {
+    color: inherit;
+}
+
+table[order] > thead > tr > th::after {
+    display: none;
+    width: .8em;
+    margin-inline-end: -.8em;
+    text-align: end;
+}
+
+table[order="asc"] > thead > tr > th::after {
+    content: "\2193";
+}
+
+table[order="desc"] > thead > tr > th::after {
+    content: "\2191";
+}
+
+table[order][order-by="0"] > thead > tr > th:first-child > a, table[order][order-by="1"] > thead > tr > th:first-child + th > a, table[order][order-by="2"] > thead > tr > th:first-child + th + th > a {
+    text-decoration: underline;
+}
+
+table[order][order-by="0"] > thead > tr > th:first-child::after, table[order][order-by="1"] > thead > tr > th:first-child + th::after, table[order][order-by="2"] > thead > tr > th:first-child + th + th::after {
+    display: inline-block;
+}
+
+td:first-child {
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+@media (min-width: 550px)
+{
+    body
+    {
+	padding: 3em;
+	background-color: white;
+	border-radius: 1em;
+	border: 2px solid rgba(211, 215, 207);
+	max-width: 65em;
+	margin: 2em auto;
+    }
+}
+
+</style>
+</head>
+</html>
