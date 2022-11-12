@@ -75,14 +75,8 @@ tr:nth-child(even) {
 }
 
 /* Mobile browsers only */
-@media only screen and (max-device-width: 480px) {
-    table#all_results {
-        width: auto;
-    }
-    td#main_box {
-        width: 320px;
-    }
-    td#side_box {
-        width: 320px;
-    }
+@media screen and (max-device-width: 480px){
+  body{
+    -webkit-text-size-adjust: none;
+  }
 }
