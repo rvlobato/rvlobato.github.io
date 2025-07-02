@@ -1,5 +1,5 @@
 :root {
-    background-color: #f6f5f4;
+    background-color: none;
     font-size: 16px;
 }
 
@@ -12,15 +12,15 @@ a:hover {
 }
 
 header h1 {
-  font-size: 1.9em;
+    font-size: 1.9em;
 }
 
 header h2 {
-  font-size: 1.5em;
+    font-size: 1.5em;
 }
 
 h1 {
-  font-size: 1.3em;
+    font-size: 1.3em;
 }
 
 th > a {
@@ -29,8 +29,8 @@ th > a {
 
 table[order] > thead > tr > th::after {
     display: none;
-    width: .8em;
-    margin-inline-end: -.8em;
+    width: 0.8em;
+    margin-inline-end: -0.8em;
     text-align: end;
 }
 
@@ -42,11 +42,15 @@ table[order="desc"] > thead > tr > th::after {
     content: "\2191";
 }
 
-table[order][order-by="0"] > thead > tr > th:first-child > a, table[order][order-by="1"] > thead > tr > th:first-child + th > a, table[order][order-by="2"] > thead > tr > th:first-child + th + th > a {
+table[order][order-by="0"] > thead > tr > th:first-child > a,
+table[order][order-by="1"] > thead > tr > th:first-child + th > a,
+table[order][order-by="2"] > thead > tr > th:first-child + th + th > a {
     text-decoration: underline;
 }
 
-table[order][order-by="0"] > thead > tr > th:first-child::after, table[order][order-by="1"] > thead > tr > th:first-child + th::after, table[order][order-by="2"] > thead > tr > th:first-child + th + th::after {
+table[order][order-by="0"] > thead > tr > th:first-child::after,
+table[order][order-by="1"] > thead > tr > th:first-child + th::after,
+table[order][order-by="2"] > thead > tr > th:first-child + th + th::after {
     display: inline-block;
 }
 
@@ -61,15 +65,46 @@ tr:nth-child(even) {
     background-color: #f2f2f2;
 }
 
-@media (min-width: 550px)
-{
-    body
-    {
-	padding: 3em;
-	background-color: white;
-	border-radius: 1em;
-	border: 2px solid rgba(211, 215, 207);
-	max-width: 65em;
-	margin: 2em auto;
+/* Default styles (often your light theme) */
+body {
+    padding: 3em;
+    background-color: #ffffff; /* White */
+    border-radius: 1em;
+    border: 2px solid rgba(211, 215, 207);
+    max-width: 65em;
+    margin: 2em auto;
+    color: #333333; /* Dark gray */
+}
+
+a {
+    color: #007bff; /* Blue */
+}
+
+/* Dark mode styles */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #333333; /* Dark gray */
+        color: #f0f0f0; /* Light gray */
+    }
+
+    a {
+        color: #88ccff; /* Lighter blue */
+    }
+
+    /* You can also adjust other elements like headers, paragraphs, borders, etc. */
+    h1,
+    h2,
+    h3 {
+        color: #f8f8f8;
+    }
+
+    p {
+        color: #e0e0e0;
+    }
+
+    button {
+        background-color: #555555;
+        color: #ffffff;
+        border: 1px solid #777777;
     }
 }
